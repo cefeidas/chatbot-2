@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Player's guide to create and play the character uplift octopus from the game Eclipse Phase">
+    <meta name="keywords" content="eclipse phase, posthuman studios, rpg, roleplaying game, player guide, uplift octopus, transhumanism">
+    <title>Code Academy Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            margin-bottom: 2em;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 100px;
+            margin-bottom: 1em;
+            padding: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .response {
+            background-color: #f8f9fa;
+            padding: 1em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="/">
+        <textarea name="user_input"></textarea>
+        <input type="submit" value="Preguntar">
+    </form>
+    <div class="response">
+        {{response}}
+    </div>
+</body>
+</html>
